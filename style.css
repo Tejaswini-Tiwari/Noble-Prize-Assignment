@@ -1,0 +1,131 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=PT+Serif:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'PT Serif', serif;
+}
+.image{
+    width: 900px;
+    height: 500px;
+    align-items: center;
+    margin-top: 100px;
+}
+.outer{
+     background-image:repeating-linear-gradient(#e4f2ef, #388895, #42403f);
+}
+.main{
+    background-image:url("https://www.nobelprize.org/images/52993-landscape-full-width-2x.jpg");
+    background-size: 1230px 600px;
+    background-repeat: no-repeat;
+    
+    width: 100vw;
+    height: 100vh;
+    text-align: end;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.filterData{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+}
+
+.filter-container{
+    color: #D6E8DB;
+    display: flex;
+    gap: 25px;
+    align-items: right;
+    justify-content: center;
+}
+
+.drop-down{
+    border: none;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.display-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.winnerDetails-container{
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    gap: 5px;
+    background-color: #e4f2ef;
+    float:inline-end;
+    width:625px;
+}
+
+.winnerDetails-container:hover{
+    box-shadow: rgba(12, 12, 12, 0.2) 0px 7px 29px 0px;
+}
+
+.heading{
+    margin-top: 100px;
+    font-size: 35px;
+    text-align: end;
+    color: #D6E8DB;
+}
+
+.filter-btn {
+  appearance: none;
+  background-color: transparent;
+  border: 2.5px solid #1A1A1A;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #D6E8DB;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  outline: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  
+}
+
+.filter-btn:disabled {
+  pointer-events: none;
+}
+
+.filter-btn:hover {
+  color: #fff;
+  background-color: #2D4356;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: translateY(-2px);
+}
+
+.filter-btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.side{
+    margin-left: 20px;
+}
